@@ -44,8 +44,6 @@ module.exports = {
                         '' +
                         ('00' + date.toString()).slice(-2);
 
-                    var todaydate = '231220';
-
                     var today = new Date(); // 요일 만드는 부분
                     var weekday = new Array(7);
                     weekday[0] = "일요일";

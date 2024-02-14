@@ -8,7 +8,8 @@ const client = new Client({ intents: [Guilds, GuildMessages, MessageContent] });
 
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json'); // 토큰 값 가져오기
+const { prefix } = require('./config.json'); // 토큰 값 가져오기
+const login_token = ${{ secrets.token }};
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -35,4 +36,4 @@ client.on('messageCreate', (msg) => {
 
 });
 
-client.login(token);
+client.login(login_token);
