@@ -1,4 +1,5 @@
 // 기본 설정과 Discord.js 정의
+require('dotenv').config(); // 환경변수 로딩
 const { Client, GatewayIntentBits, Partials, REST, Routes } = require('discord.js');
 const client = new Client(
     {
