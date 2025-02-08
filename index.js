@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const Discord = require('discord.js');
 // const { token } = require('./config.json'); // 토큰 값 가져오기
-// const token = open("token", "r").readline()
+const token = process.env.TOKEN;
 
 // 명령어 로드
 
