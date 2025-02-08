@@ -1,7 +1,7 @@
 {
-  "name": "bot",
+  "name": "chamsaebot",
   "version": "1.0.0",
-  "description": "",
+  "description": "참새봇",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,34 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.14.1",
+    "@discordjs/builders": "^1.7.0",
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.18.0",
+    "@distube/ytdl-core": "^4.16.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "discord-player": "^6.6.7",
+    "discord.js": "^14.17.3",
+    "express": "^4.21.2",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.2.0",
+    "libsodium-wrappers": "^0.7.15",
+    "lzma-native": "^8.0.6",
+    "play-dl": "^1.9.7",
     "request": "^2.88.2",
-    "request-promise-native": "^1.0.9"
-  }
+    "request-promise-native": "^1.0.9",
+    "sodium-native": "^4.3.1",
+    "youtube-node": "^1.3.3",
+    "ytdl-core": "npm:@distube/ytdl-core@^4.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoo091221/Chamsae_bot.git"
+  },
+  "keywords": [
+    "Chamsae"
+  ],
+  "bugs": {
+    "url": "https://github.com/hoo091221/Chamsae_bot/issues"
+  },
+  "homepage": "https://github.com/hoo091221/Chamsae_bot#readme"
 }
