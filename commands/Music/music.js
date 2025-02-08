@@ -282,6 +282,7 @@ async function playSong(guild, song) {
         const stream = await ytdl(song.url, { requestOptions: {
             headers: {
                 cookie: fs.readFileSync('./../../txt/cookies.txt', 'utf8'),
+                Authorization: 'SAPISIDHASH 1738989837_dbc95dca5f9fb9e6b0e100283a76a4b0f2cbba5e_u',
             },
         }, filter: 'audioonly', highWaterMark: 1 << 25, dlChunkSize: 0 });
         resource = createAudioResource(stream, { inlineVolume: true });
