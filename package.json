@@ -12,6 +12,7 @@
     "@discordjs/builders": "^1.7.0",
     "@discordjs/opus": "^0.10.0",
     "@discordjs/voice": "^0.18.0",
+    "@distube/ytdl-core": "^4.16.0",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "csv-parser": "^3.2.0",
     "discord-player": "^6.7.1",
