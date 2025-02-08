@@ -22,6 +22,7 @@
     "ffmpeg-static": "^5.2.0",
     "libsodium-wrappers": "^0.7.15",
     "lzma-native": "^8.0.6",
+    "natural": "^8.0.1",
     "play-dl": "^1.9.7",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
