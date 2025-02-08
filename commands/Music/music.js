@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerStatus, NoSubscriberBehavior, VoiceConnectionStatus, entersState } = require('@discordjs/voice');
-const ytdl = require('@distube/ytdl-core');
+const ytdl = require('ytdl-core-discord');
 const ytSearch = require('yt-search');
 
 const { SlashCommandBuilder } = require('@discordjs/builders');
@@ -279,7 +279,11 @@ async function playSong(guild, song) {
     }
 
     try {
-        const stream = await ytdl(song.url, { filter: 'audioonly', highWaterMark: 1 << 25, dlChunkSize: 0 });
+        const stream = await ytdl(song.url, { requestOptions: {
+            headers: {
+                cookie: fs.readFileSync('./../../txt/cookies.txt', 'utf8'),
+            },
+        }, filter: 'audioonly', highWaterMark: 1 << 25, dlChunkSize: 0 });
         resource = createAudioResource(stream, { inlineVolume: true });
         if (!vol) vol = 0.5;
         resource.volume.setVolume(vol);
